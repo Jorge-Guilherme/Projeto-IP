@@ -1,50 +1,87 @@
 import pygame as pg
+from player import Player
+from game_platform import Platform
+
+# Inicialização do Pygame
+pg.init()
 
 # Resolução da janela
 resolA = 1280
 resolL = 720
 
-pg.init()
-
 game_window = pg.display.set_mode([resolA, resolL])
 pg.display.set_caption("SilasPilgrimVSTheCIn")
 
-block_color = (0, 100, 255)
+# Cores
+background_color = (0, 0, 0)
+floor_color = (0, 255, 0)  # Cor verde para o piso
+death_color = (255, 0, 0)  # Cor vermelha para o piso mortal
 
-block_size = 50
+# Info das plataformas
+platforms = [
+    (200, 600, 200, 20),  # (x, y, width, height)
+    (500, 450, 200, 20),
+    (800, 300, 200, 20),
+]
 
-# Info do bloco (Spawn e speed)
-block_x = resolA // 2
-block_y = resolL // 2
+# Criação de objetos
+player = Player(resolA // 2, resolL // 2)
+platform_objects = [Platform(*p) for p in platforms]
 
-block_speed = 2
+# Configuração da câmera
+camera = pg.Rect(0, 0, resolA, resolL)
+
+# Configuração do piso
+floor_height = 20  # Altura do piso verde
+floor_y = resolL - floor_height
+death_height = 20  # Altura do piso mortal
+death_y = floor_y + death_height
+
+# Função para reiniciar o jogo
+def restart_game():
+    player.x = resolA // 2
+    player.y = resolL // 2
+    player.velocity_y = 0
+    player.on_ground = False
 
 # Loop do jogo
 gameloop = True
+clock = pg.time.Clock()
 while gameloop:
     for event in pg.event.get():
         if event.type == pg.QUIT:
             pg.quit()
             gameloop = False
 
-    # Obtendo as teclas pressionadas
+    # Atualizando o jogador e plataformas
     keys = pg.key.get_pressed()
+    player.update(keys, platform_objects, floor_y)
 
-    # Movendo o bloco de acordo com as teclas pressionadas
-    if keys[pg.K_LEFT]:
-        block_x -= block_speed
-    if keys[pg.K_RIGHT]:
-        block_x += block_speed
-    if keys[pg.K_UP]:
-        block_y -= block_speed
-    if keys[pg.K_DOWN]:
-        block_y += block_speed
+    # Verifica se o jogador caiu no piso mortal
+    if player.y + player.size > death_y:
+        restart_game()
+
+    # Atualiza a posição da câmera para seguir o jogador
+    camera.center = (player.x + player.size // 2, player.y + player.size // 2)
 
     # Preenchendo a tela com uma cor (preto)
-    game_window.fill((0, 0, 0))
+    game_window.fill(background_color)
 
-    # Desenhando o bloco na nova posição
-    pg.draw.rect(game_window, block_color, (block_x, block_y, block_size, block_size))
+    # Desenhando o piso verde
+    floor_rect = pg.Rect(-camera.x, floor_y - camera.y, resolA * 2, floor_height)
+    pg.draw.rect(game_window, floor_color, floor_rect)
+
+    # Desenhando o piso mortal
+    death_rect = pg.Rect(-camera.x, death_y - camera.y, resolA * 2, death_height)
+    pg.draw.rect(game_window, death_color, death_rect)
+
+    # Desenhando o jogador
+    player.draw(game_window, camera)
+
+    # Desenhando as plataformas
+    for platform in platform_objects:
+        platform.draw(game_window, camera)
 
     # Atualizando a tela
     pg.display.update()
+    clock.tick(60)  # Limita o loop para rodar a 60 quadros por segundo (fps)
