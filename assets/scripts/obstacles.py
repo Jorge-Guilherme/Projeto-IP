@@ -16,3 +16,4 @@ class Obstacle:
 
     def update_rect(self):
         self.rect = pg.Rect(self.x, self.y, self.width, self.height)
+
