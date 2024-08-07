@@ -27,9 +27,9 @@ O arquivo `main` está localizado na raiz do projeto.
 
 ## Capturas de Tela
 
-![Screenshot do Jogo](assets/menu.png)
+![Screenshot do Jogo](assets/screens/menu.png)
 
-![Screenshot do Jogo](assets/bg_gameover.png)
+![Screenshot do Jogo](assets/screens/bg_gameover.png)
 
 
 ## Ferramentas, Bibliotecas e Frameworks
