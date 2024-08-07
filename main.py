@@ -17,6 +17,11 @@ background_color = (0, 0, 0)
 floor_color = (0, 255, 0)  # Cor verde para o piso
 death_color = (255, 0, 0)  # Cor vermelha para o piso mortal
 
+# Background
+background_image = pg.image.load('assets/cin.jpeg')
+background_image = pg.transform.scale(background_image, (resolA, resolL))
+
+
 # Info das plataformas
 platforms = [
     (200, 600, 200, 20),  # (x, y, width, height)
@@ -66,6 +71,9 @@ while gameloop:
 
     # Preenchendo a tela com uma cor (preto)
     game_window.fill(background_color)
+
+    # Desenhando o fundo
+    game_window.blit(background_image, (0, 0))
 
     # Desenhando o piso verde
     floor_rect = pg.Rect(-camera.x, floor_y - camera.y, resolA * 2, floor_height)
