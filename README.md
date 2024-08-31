@@ -1,24 +1,81 @@
-<div id="badges">
-  <img src="https://img.shields.io/badge/Windows-blue?logo=Windows&logoColor=white&style=for-the-badge" alt="Windows Badge"/>
-  <img src="https://img.shields.io/badge/License-dark?logo=License&logoColor=white&style=for-the-badge" alt="License Badge"/>
-  <img src="https://img.shields.io/badge/MIT-grey?logo=MIT&logoColor=white&style=for-the-badge" alt="MIT Badge"/>
-</div>
-<h1>Capcut Pro PC 2024</h1>
-<p><img src="https://repository-images.githubusercontent.com/831135766/f4a9a541-a84f-42a2-ab29-bddf7417657f"/></p>
-<h2>Capcut PC</h2>
-<p><strong>CapCut is a free and high-quality video editor. With its help you will be able to create stunning videos.
-CapCut application is incredibly easy to use. You will easily understand how to work with it, even if you have never experienced video editing and editing before. A large set of tools will expand your possibilities and allow you to realize any ideas. You will be able to change reduce or increase the speed, add texts and make many other manipulations.
+# Silas Pilgrim vs The CIn
 
-Features of the CapCut application:
+## Descrição do Jogo
+**Silas Pilgrim vs The CIn** é um jogo 2D desenvolvido em Python utilizando a biblioteca Pygame. O personagem principal, Silas, enfrenta obstáculos em sua jornada pelo Centro de Informática (CIn), como greves e listas difíceis. O objetivo é coletar amigos ao longo do percurso sem perder todas as vidas. O jogo começa com Silas tendo 3 vidas, que são perdidas ao colidir com os obstáculos. Se todos os amigos forem coletados sem perder todas as vidas, Silas avança para o próximo período.
 
-A large selection of filters and the most current beauty effects.
-Extensive music library and great author's songs.
-Colorful stickers and original fonts suitable for personalizing videos.
-Huge possibilities to realize creative projects.</p>
-</ol>
-<a href="https://github.com/Jorge-Guilherme/Capcut-Pro-PC/releases/tag/DOWNLOAD">
-<img src="https://img.shields.io/badge/Download-blue?logo=Download&logoColor=white&style=for-the-badge" alt="Download"/>
+## Arquitetura do Projeto e Organização do Código
+O código do jogo está organizado da seguinte forma:
 
+- **Caminho:** `assets/scripts/`
+- **Módulos:**
+  - `collectibles`
+  - `game_platform`
+  - `menu`
+  - `obstacles`
+  - `player`
+- O arquivo principal do jogo (`main.py`) está localizado na raiz do projeto.
 
+## Ferramentas, Bibliotecas e Frameworks Utilizados
+- GitHub
+- Pygame
+- VSCode
+- Programação Orientada a Objetos (POO)
+- PixilArt
 
-##### capcut crack,capcut pc pro crack,capcut pro crack pc,crack capcut pro pc,capcut pro crack,hướng dẫn crack app cap cut trung quốc,capcut pro pc crack,capcut pc crack,capcut crack pc,cách crack capcut pro,cách crack capcut pro pc,how to crack capcut,jianying crack,how to crack jianying,hacks do capcut,capcut pro,pro capcut,cap cut pro,capcut mac,capcutpro,pro cap cut,capcut pro editing pack,capcut pro gratis,capcut pro para pc
+## Divisão de Trabalho
+### Equipe de Design e Implementação:
+- Renata Micaelly (rmps)
+- Sofia Ribeiro (srs2)
+
+### Equipe de Mecânica:
+- Jorge Guilherme (jglvc)
+- Silas Manoel (smfs)
+
+### Equipe dos Coletáveis:
+- Hugo Coelho (hcbl)
+- Vinícius França (vsf2)
+
+## Organização das Sprints
+
+### Sprint 1:
+- Criação do repositório
+- Idealização do jogo
+- Definição do líder
+- Nivelamento da equipe
+- Seleção das bibliotecas
+- Divisão de tarefas e estabelecimento de metas
+- Estudo de POO
+
+### Sprint 2:
+- Divisão em duplas para as tarefas
+- Organização do Trello
+- Criação do primeiro MVP
+- Desenvolvimento das movimentações
+- Design inicial
+- Definição dos NPCs e amigos do personagem
+
+### Sprint 3:
+- Aperfeiçoamento do MVP
+- Desenvolvimento de novas movimentações e animações
+- Desenho dos NPCs, coletáveis e inimigos
+
+### Sprint 4:
+- Implementação dos sprites e artes dos personagens
+- Criação dos obstáculos
+- Desenvolvimento do menu
+
+## Conceitos Aprendidos e Utilizados
+Além dos conceitos já vistos em sala de aula, como listas, funções e estruturas de repetição, aprendemos e aplicamos novas tecnologias, incluindo:
+
+- Programação Orientada a Objetos (POO)
+- Biblioteca Pygame
+- Versionamento de código com Git e GitHub
+- Trabalho em equipe utilizando Gitflow
+
+## Desafios, Erros e Aprendizados
+Os principais desafios enfrentados pelo grupo foram:
+
+- **GitHub:** Muitos membros não tinham experiência prévia com Git/GitHub e enfrentaram dificuldades com comandos e fluxo de trabalho.
+- **Pygame:** Compreender as estruturas e funções da biblioteca Pygame foi desafiador para a equipe.
+- **Programação Orientada a Objetos:** Os conceitos de POO foram complexos para alguns membros, exigindo tempo para entendimento e aplicação.
+
